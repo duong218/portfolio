@@ -78,10 +78,21 @@ h2{margin:0 0 1rem;font-weight:700;font-size:clamp(2.6rem,8vw,5.6rem);line-heigh
 .so a:hover{background:#fff;color:#000}
 footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;color:#888;font-size:.9rem;padding-top:3rem}
 @media (max-width:820px){
-.links{display:none}h1{font-size:19vw;white-space:normal}h1 span{display:block}
+.links{display:none}h1{font-size:clamp(2.8rem,14vw,6.5rem);white-space:normal}h1 span{display:block}h1 span:first-child{white-space:nowrap}
 .bar{grid-template-columns:1fr 1fr}.bar div:nth-child(3){border-left:0}.bar div:nth-child(n+3){border-top:2px solid var(--fg)}
 .ab,.sk,.pj,.ct{grid-template-columns:1fr}.pj:nth-child(even) .shot{order:0}
 .tl::before{left:8px}.it{grid-template-columns:1fr;gap:1rem;padding-left:2.5rem}.it::before{left:8px;top:1.6rem}.yr{text-align:left}}
+@media (max-width:480px){
+nav .w{padding-inline:4vw;gap:.5rem}.tg{padding:.4rem .75rem;font-size:.78rem}
+.hm{padding:2.5vh 3vw 0}.pills{gap:.65rem .75rem;padding:0;margin-bottom:.8rem}.pill{padding:.32rem .8rem;font-size:.72rem}.dot{width:2.7rem;height:2.7rem;font-size:1.1rem}
+h1{font-size:clamp(2.55rem,13.6vw,4rem);line-height:.98;letter-spacing:-.06em}
+.code{font-size:.72rem;padding:1rem 1vw}
+.bar{font-size:.8rem}.bar div{padding:.8rem .65rem}
+section{padding:4.5rem 0 1.5rem}.card{padding:1.35rem;border-radius:22px}.ab h3{font-size:1.4rem}
+.btn{padding:.68rem 1.1rem;font-size:.78rem}.lk{gap:.85rem;flex-wrap:wrap}.shot{border-radius:16px}
+.em{font-size:1rem;padding:.9rem 1rem}.so{gap:.65rem}.so a{padding:.65rem .9rem}
+footer{font-size:.8rem}
+}
 #pg{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:3px;background:var(--fg);transform-origin:0 50%;transform:scaleX(0);z-index:21}
 [data-rv],[data-rv] *{visibility:hidden}
 .card,.me{transition:transform .25s,box-shadow .25s}.card:hover,.me:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--fg)}
