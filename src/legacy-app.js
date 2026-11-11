@@ -10,9 +10,9 @@ const P = [
   { tag: 'Khóa luận và sản phẩm cho công ty', n: 'Z176 LMS: hệ thống thi chuyên môn nghiệp vụ giỏi', d: 'Hệ thống thi trắc nghiệm phục vụ quản lý đào tạo nội bộ của Công ty TNHH MTV 76. Mình phân tích nghiệp vụ, vẽ UML và thiết kế giao diện. Bản nâng cấp từ khóa luận, có thêm chatbot AI.', s: [['BA', 'Vai trò'], ['Khóa luận', 'Loại'], ['Thi trắc nghiệm', 'Chức năng chính']], t: ['MERN', 'MongoDB', 'UML', 'AI'], g: 'https://github.com/duong218/z176lms', img: IMG[0] },
   { tag: 'Sản phẩm cho công ty', n: 'Chỗ ngồi hội trường Z176', d: 'Ứng dụng sắp xếp và chỉ chỗ ngồi trong hội trường của Công ty TNHH MTV 76.', s: [['Sơ đồ ghế', 'Chức năng chính'], ['Hội trường', 'Nơi dùng']], t: ['MERN', 'Docker', 'StarUML'], g: 'https://github.com/duong218/hoitruongz76', img: IMG[1] },
   { tag: 'Dự án freelance', n: 'LucyClass: quản lý trung tâm tiếng Anh', d: 'Hệ thống nhiều vai trò cho một trung tâm thật: quản lý học viên, lịch học, điểm danh, chấm công và tính lương tự động theo lịch dạy.', s: [['3 vai trò', 'Admin, Teacher, Marketing'], ['4 lớp', 'Sao lưu mã hóa'], ['8.9/10', 'Bảo mật, do AI chấm']], t: ['MERN', 'Redis', 'Cloudinary', 'Google Drive API', 'Vercel', 'Render'], g: 'https://github.com/duong218/lucyClass', live: 'https://lucy-class.vercel.app', img: IMG[2] },
-  { tag: 'Landing page freelance', n: 'LucyLanding', d: 'Trang giới thiệu cho trung tâm tiếng Anh Lucy’Class.', s: [['Landing page', 'Loại'], ['Freelance', 'Hình thức']], t: ['HTML', 'CSS', 'JavaScript'], g: 'https://github.com/duong218/LucyLanding', img: IMG[3] },
-  { tag: 'Landing page freelance', n: 'HoaVillas', d: 'Trang giới thiệu bất động sản.', s: [['Landing page', 'Loại'], ['Freelance', 'Hình thức']], t: ['HTML', 'CSS', 'JavaScript'], g: 'https://github.com/duong218/HoaVillas', img: IMG[4] },
-  { tag: 'Landing page freelance', n: 'Mê Hoa', d: 'Trang giới thiệu cho một tiệm hoa nhỏ ở Hà Nội.', s: [['Landing page', 'Loại'], ['Freelance', 'Hình thức']], t: ['HTML', 'CSS', 'JavaScript'], g: 'https://github.com/duong218/mehoa', img: IMG[5] }
+  { tag: 'Landing page freelance', n: 'LucyLanding', d: 'Trang giới thiệu cho trung tâm tiếng Anh Lucy’Class.', s: [['Landing page', 'Loại'], ['Freelance', 'Hình thức']], t: ['HTML', 'CSS', 'JavaScript'], g: 'https://github.com/duong218/LucyLanding', live: 'https://lucylandingpage.vercel.app/', img: IMG[3] },
+  { tag: 'Landing page freelance', n: 'HoaVillas', d: 'Trang giới thiệu bất động sản.', s: [['Landing page', 'Loại'], ['Freelance', 'Hình thức']], t: ['HTML', 'CSS', 'JavaScript'], g: 'https://github.com/duong218/HoaVillas', live: 'https://duonghoavillas.vercel.app/', img: IMG[4] },
+  { tag: 'Landing page freelance', n: 'Mê Hoa', d: 'Trang giới thiệu cho một tiệm hoa nhỏ ở Hà Nội.', s: [['Landing page', 'Loại'], ['Freelance', 'Hình thức']], t: ['HTML', 'CSS', 'JavaScript'], g: 'https://github.com/duong218/mehoa', live: 'https://mehoa.vercel.app/', img: IMG[5] }
 ];
 
 const T = [
@@ -28,7 +28,7 @@ const Proj = (p) => h('article', { className: 'pj', key: p.n },
   h('div', null, h('span', { className: 'tp' }, p.tag), h('h3', null, p.n), h('p', null, p.d),
     h('div', { className: 'st' }, p.s.map((x) => h('div', { key: x[1] }, h('b', null, x[0]), h('small', null, x[1])))),
     Chips(p.t),
-    h('div', { className: 'lk' }, A(p.g, 'Mã nguồn'), p.live && A(p.live, 'Xem trang chạy thử'))),
+    h('div', { className: 'lk' }, A(p.g, 'Mã nguồn'), p.live && A(p.live, 'Chạy thử'))),
   h('div', { className: 'shot' }, p.img ? h('img', { src: p.img, alt: p.n, loading: 'lazy' }) : 'Ảnh chụp màn hình dự án sẽ đặt ở đây'));
 
 function App() {
@@ -598,7 +598,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(h(App));
     'Sản phẩm cho công ty': 'Company product', 'Chỗ ngồi hội trường Z176': 'Z176 hall seating', 'Sơ đồ ghế': 'Seat map', 'Hội trường': 'Hall', 'Nơi dùng': 'Used at', '(điền công nghệ)': '(add tech stack)',
     'Dự án freelance': 'Freelance project', 'LucyClass: quản lý trung tâm tiếng Anh': 'LucyClass: English center management', '3 vai trò': '3 roles', '4 lớp': '4 layers', 'Sao lưu mã hóa': 'Encrypted backup', 'Bảo mật, do AI chấm': 'Security, graded by AI',
     'Landing page freelance': 'Freelance landing page', 'Trang giới thiệu bất động sản.': 'Real estate introduction page.', 'Hình thức': 'Format',
-    'Mã nguồn': 'Source code', 'Xem trang chạy thử': 'Try the live demo', 'Ảnh chụp màn hình dự án sẽ đặt ở đây': 'Project screenshot goes here',
+    'Mã nguồn': 'Source code', 'Chạy thử': 'Live demo', 'Xem trang chạy thử': 'Try the live demo', 'Ảnh chụp màn hình dự án sẽ đặt ở đây': 'Project screenshot goes here',
     'Từ giảng đường đến những hệ thống chạy thật.': 'From lecture halls to systems running for real.',
     'Hiện tại': 'Now', 'Thực tập tại Công ty TNHH MTV 76': 'Internship at 76 One-Member Co., Ltd.', 'Từ 10/8/2026': 'Since 10 Aug 2026',
     'Thành tích': 'Achievement', 'Học bổng toàn phần': 'Full scholarship', 'Học kì 1 - 2026': 'Semester 1, 2026', 'Học kì 2 - 2025': 'Semester 2, 2025', 'Toàn phần': 'Full',
