@@ -19,7 +19,7 @@
     'Mã nguồn': 'Source code', 'Xem trang chạy thử': 'Try the live demo', 'Ảnh chụp màn hình dự án sẽ đặt ở đây': 'Project screenshot goes here',
     'Từ giảng đường đến những hệ thống chạy thật.': 'From lecture halls to systems running for real.',
     'Hiện tại': 'Now', 'Thực tập tại Công ty TNHH MTV 76': 'Internship at 76 One-Member Co., Ltd.', 'Từ 10/8/2026': 'Since 10 Aug 2026',
-    'Thành tích': 'Achievement', 'Học bổng toàn phần': 'Full scholarship', 'Học kì 1 - 2026': 'Semester 1, 2026', 'Học kì 2 - 2025': 'Semester 2, 2025', 'Toàn phần': 'Full',
+    'Thành tích': 'Achievement', 'học bổng học kì': 'semester scholarship', 'Học kì 1 - 2026': 'Semester 1, 2026', 'Học kì 2 - 2025': 'Semester 2, 2025', 'Toàn phần': 'Full',
     'Phân tích và thiết kế hệ thống LucyClass': 'Analysis & design of LucyClass', '1/2026 đến 5/2026': 'Jan 2026 to May 2026', 'Phân tích yêu cầu': 'Requirements analysis', 'Thiết kế hệ thống': 'System design', 'Triển khai': 'Deployment',
     'Thực tập': 'Internship', 'Thực tập IT tại HTC Viễn Thông Quốc Tế': 'IT internship at HTC International Telecom', '4/2025 đến 6/2025': 'Apr 2025 to Jun 2025', 'Tài liệu kỹ thuật': 'Technical documents',
     'Học tập': 'Study', 'Khoa học máy tính': 'Computer science', 'Học viện Nông nghiệp Việt Nam': 'Vietnam National University of Agriculture', 'Thuật toán': 'Algorithms', 'Toán rời rạc': 'Discrete math',

@@ -17,9 +17,9 @@ const P = [
 
 const T = [
   ['08.2026', 'Hiện tại', 'Thực tập tại Công ty TNHH MTV 76', 'Từ 10/8/2026', 'Làm hệ thống thi chuyên môn nghiệp vụ giỏi và sơ đồ chỗ ngồi hội trường.', ['Business Analyst', 'UML', 'MERN']],
-  ['HK1.2026', 'Thành tích', 'Học bổng toàn phần', 'Học kì 1 - 2026', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Toàn phần']],
+  ['HK1.2026', 'Thành tích', 'học bổng học kì', 'Học kì 1 - 2026', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Toàn phần']],
   ['01.2026', 'Freelance', 'Phân tích và thiết kế hệ thống LucyClass', '1/2026 đến 5/2026', 'Nhận yêu cầu từ khách hàng, phân tích, thiết kế và đưa lên production.', ['Phân tích yêu cầu', 'Thiết kế hệ thống', 'Triển khai']],
-  ['HK2.2025', 'Thành tích', 'Học bổng toàn phần', 'Học kì 2 - 2025', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Toàn phần']],
+  ['HK2.2025', 'Thành tích', 'học bổng học kì', 'Học kì 2 - 2025', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Toàn phần']],
   ['04.2025', 'Thực tập', 'Thực tập IT tại HTC Viễn Thông Quốc Tế', '4/2025 đến 6/2025', 'Soạn thảo và chỉnh sửa báo cáo kỹ thuật, làm quen môi trường doanh nghiệp công nghệ.', ['Tài liệu kỹ thuật']],
   ['2022', 'Học tập', 'Khoa học máy tính', 'Học viện Nông nghiệp Việt Nam', 'Bắt đầu học và dần chọn hướng phân tích thiết kế hệ thống.', ['Thuật toán', 'Toán rời rạc']]
 ];
