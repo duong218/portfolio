@@ -5,8 +5,9 @@ const Chips = (a) => h('div', { className: 'ch' }, a.map((x) => h('span', { key:
 
 const PF_ID = '/img/pf-id.webp';
 const PF_ME = '/img/pf-me.webp';
-const IMG = ['/img/project-1.webp','/img/project-2.webp','/img/project-3.webp','/img/project-4.webp','/img/project-5.webp','/img/project-6.webp'];
+const IMG = ['/img/project-1.webp','/img/project-2.webp','/img/project-3.webp','/img/project-4.webp','/img/project-5.webp','/img/project-6.webp','/img/project-7.webp'];
 const P = [
+  { tag: 'Dự án freelance', n: 'Ocean and Gem: quản lý tiến độ công việc nhóm', d: 'Ứng dụng web cho nhóm nhỏ và cá nhân: tạo công việc, giao nhiệm vụ trên bảng Kanban, theo dõi tiến độ bằng checklist có trọng số, xử lý chuyển giao và xuất báo cáo excel. Phân quyền kiểm soát ngay trong cơ sở dữ liệu.', s: [['2 vai trò', 'Trưởng/phó nhóm, thành viên'], ['Freelance', 'Loại'], ['Nhóm nhỏ, cá nhân', 'Quy mô dùng']], t: ['React', 'Vite', 'Supabase', 'PostgreSQL', 'Vercel'], g: 'https://github.com/duong218/team_management', live: 'https://oceanandgem.vercel.app/', img: IMG[6] },
   { tag: 'Khóa luận và sản phẩm cho công ty', n: 'Z176 LMS: hệ thống thi chuyên môn nghiệp vụ giỏi', d: 'Hệ thống thi trắc nghiệm phục vụ quản lý đào tạo nội bộ của Công ty TNHH MTV 76. Mình phân tích nghiệp vụ, vẽ UML và thiết kế giao diện. Bản nâng cấp từ khóa luận, có thêm chatbot AI.', s: [['BA', 'Vai trò'], ['Khóa luận', 'Loại'], ['Thi trắc nghiệm', 'Chức năng chính']], t: ['MERN', 'MongoDB', 'UML', 'AI'], g: 'https://github.com/duong218/z176lms', img: IMG[0] },
   { tag: 'Sản phẩm cho công ty', n: 'Chỗ ngồi hội trường Z176', d: 'Ứng dụng sắp xếp và chỉ chỗ ngồi trong hội trường của Công ty TNHH MTV 76.', s: [['Sơ đồ ghế', 'Chức năng chính'], ['Hội trường', 'Nơi dùng']], t: ['MERN', 'Docker', 'StarUML'], g: 'https://github.com/duong218/hoitruongz76', img: IMG[1] },
   { tag: 'Dự án freelance', n: 'LucyClass: quản lý trung tâm tiếng Anh', d: 'Hệ thống nhiều vai trò cho một trung tâm thật: quản lý học viên, lịch học, điểm danh, chấm công và tính lương tự động theo lịch dạy.', s: [['3 vai trò', 'Admin, Teacher, Marketing'], ['4 lớp', 'Sao lưu mã hóa'], ['8.9/10', 'Bảo mật, do AI chấm']], t: ['MERN', 'Redis', 'Cloudinary', 'Google Drive API', 'Vercel', 'Render'], g: 'https://github.com/duong218/lucyClass', live: 'https://lucy-class.vercel.app', img: IMG[2] },
@@ -17,9 +18,9 @@ const P = [
 
 const T = [
   ['08.2026', 'Hiện tại', 'Thực tập tại Công ty TNHH MTV 76', 'Từ 10/8/2026', 'Làm hệ thống thi chuyên môn nghiệp vụ giỏi và sơ đồ chỗ ngồi hội trường.', ['Business Analyst', 'UML', 'MERN']],
-  ['HK1.2026', 'Thành tích', 'học bổng học kì', 'Học kì 1 - 2026', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Toàn phần']],
+  ['05.2026', 'Thành tích', 'học bổng học kì', 'Học kì 1 - 2026', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Học kì']],
   ['01.2026', 'Freelance', 'Phân tích và thiết kế hệ thống LucyClass', '1/2026 đến 5/2026', 'Nhận yêu cầu từ khách hàng, phân tích, thiết kế và đưa lên production.', ['Phân tích yêu cầu', 'Thiết kế hệ thống', 'Triển khai']],
-  ['HK2.2025', 'Thành tích', 'học bổng học kì', 'Học kì 2 - 2025', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Toàn phần']],
+  ['.2025', 'Thành tích', 'học bổng học kì', 'Học kì 2 - 2025', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Học kì']],
   ['04.2025', 'Thực tập', 'Thực tập IT tại HTC Viễn Thông Quốc Tế', '4/2025 đến 6/2025', 'Soạn thảo và chỉnh sửa báo cáo kỹ thuật, làm quen môi trường doanh nghiệp công nghệ.', ['Tài liệu kỹ thuật']],
   ['2022', 'Học tập', 'Khoa học máy tính', 'Học viện Nông nghiệp Việt Nam', 'Bắt đầu học và dần chọn hướng phân tích thiết kế hệ thống.', ['Thuật toán', 'Toán rời rạc']]
 ];
@@ -413,7 +414,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(h(App));
   }
   function initWork() {
     const at = document.getElementById('gioi-thieu'); if (!at) return;
-    const ST = [[6, 'dự án đã làm'], [3, 'nơi đã thực tập và làm freelance'], [4, 'năm học đại học']];
+    const ST = [[7, 'dự án đã làm'], [3, 'nơi đã thực tập và làm freelance'], [4, 'năm học đại học']];
     const WK = [
       ['Nghe yêu cầu', 'Ngồi nghe khách hàng hoặc người dùng nói họ cần gì, hỏi lại cho đến khi hiểu rõ.', 'Ví dụ: nhận yêu cầu trực tiếp từ trung tâm tiếng Anh cho LucyClass.'],
       ['Phân tích', 'Viết đặc tả, tách yêu cầu thành vai trò và chức năng.', 'Ví dụ: LucyClass chia thành 3 vai trò Admin, Teacher, Marketing.'],
@@ -597,6 +598,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(h(App));
     'Vai trò': 'Role', 'Khóa luận': 'Thesis', 'Loại': 'Type', 'Thi trắc nghiệm': 'Quiz exams', 'Chức năng chính': 'Main feature',
     'Sản phẩm cho công ty': 'Company product', 'Chỗ ngồi hội trường Z176': 'Z176 hall seating', 'Sơ đồ ghế': 'Seat map', 'Hội trường': 'Hall', 'Nơi dùng': 'Used at', '(điền công nghệ)': '(add tech stack)',
     'Dự án freelance': 'Freelance project', 'LucyClass: quản lý trung tâm tiếng Anh': 'LucyClass: English center management', '3 vai trò': '3 roles', '4 lớp': '4 layers', 'Sao lưu mã hóa': 'Encrypted backup', 'Bảo mật, do AI chấm': 'Security, graded by AI',
+    'Ocean and Gem: quản lý tiến độ công việc nhóm': 'Ocean and Gem: team progress management', '2 vai trò': '2 roles', 'Trưởng/phó nhóm, thành viên': 'Team lead/deputy, member', 'Nhóm nhỏ, cá nhân': 'Small teams, individuals', 'Quy mô dùng': 'Scale',
     'Landing page freelance': 'Freelance landing page', 'Trang giới thiệu bất động sản.': 'Real estate introduction page.', 'Hình thức': 'Format',
     'Mã nguồn': 'Source code', 'Chạy thử': 'Live demo', 'Xem trang chạy thử': 'Try the live demo', 'Ảnh chụp màn hình dự án sẽ đặt ở đây': 'Project screenshot goes here',
     'Từ giảng đường đến những hệ thống chạy thật.': 'From lecture halls to systems running for real.',
@@ -632,6 +634,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(h(App));
     ['Các hệ thống mình đã', 'Systems I analyzed, designed and built with real customers.'],
     ['Hệ thống thi trắc nghiệm', 'A multiple-choice exam system for internal training management at 76 One-Member Co., Ltd. I handled business analysis, UML and interface design. An upgrade of the thesis project, with an added AI chatbot.'],
     ['Ứng dụng sắp xếp', 'An app that arranges and shows seats in the hall of 76 One-Member Co., Ltd.'],
+    ['Ứng dụng web cho nhóm nhỏ', 'A web app for small teams and individuals: create tasks, assign them on a Kanban board, track progress with weighted checklists, handle handovers and export excel reports. Permissions are enforced in the database itself.'],
     ['Hệ thống nhiều vai trò', 'A multi-role system for a real center: students, schedules, attendance, timekeeping and automatic payroll from teaching schedules.'],
     ['Trang giới thiệu cho trung tâm', 'Introduction page for the Lucy’Class English center.'],
     ['Trang giới thiệu cho một tiệm', 'Introduction page for a small flower shop in Hanoi.'],
