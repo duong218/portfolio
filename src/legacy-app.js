@@ -615,6 +615,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(h(App));
   };
   const L = [
     ['const hoSo', 'const profile = async () => { name: "Phạm Ngọc Dương", city: "Hanoi", goal: "Business Analyst, UI/UX", internship: "76 One-Member Co., Ltd." }'],
+    ['Mình thuộc ngành Khoa học máy tính tại Học viện Nông nghiệp Việt Nam. Mình thích nhất phần nghe người dùng cần gì, rồi vẽ thành sơ đồ và màn hình dễ dùng với đúng người sẽ dùng nó.', 'I am a Computer Science student at the Vietnam National University of Agriculture. What I enjoy most is listening to understand users needs, then translating those into diagrams and user-friendly interfaces tailored specifically for the people who will actually use them.'],
     ['Mình nghe người dùng nói', 'I listen to what users need, then turn it into diagrams and screens that are easy to use.'],
     ['Mình thuộc chuyên ngành Khoa học máy tính', 'I major in Computer Science at the Vietnam Agricultural University. What I like most is listening to what users need, then turning it into diagrams and screens that are easy for the people who will actually use them.'],
     ['Biết nhận trách nhiệm', 'I take responsibility and coordinate. In two team projects of four, I was the link between the lecturer’s requirements and the developers.'],
