@@ -20,9 +20,9 @@ const T = [
   ['08.2026', 'Hiện tại', 'Thực tập tại Công ty TNHH MTV 76', 'Từ 10/8/2026', 'Làm hệ thống thi chuyên môn nghiệp vụ giỏi và sơ đồ chỗ ngồi hội trường.', ['Business Analyst', 'UML', 'MERN']],
   ['05.2026', 'Thành tích', 'học bổng học kì', 'Học kì 1 - 2026', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Học kì']],
   ['01.2026', 'Freelance', 'Phân tích và thiết kế hệ thống LucyClass', '1/2026 đến 5/2026', 'Nhận yêu cầu từ khách hàng, phân tích, thiết kế và đưa lên production.', ['Phân tích yêu cầu', 'Thiết kế hệ thống', 'Triển khai']],
-  ['.2025', 'Thành tích', 'học bổng học kì', 'Học kì 2 - 2025', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Học kì']],
+  ['11.2025', 'Thành tích', 'học bổng học kì', 'Học kì 2 - 2025', 'Thành tích học tập tại Học viện Nông nghiệp Việt Nam.', ['Học kì']],
   ['04.2025', 'Thực tập', 'Thực tập IT tại HTC Viễn Thông Quốc Tế', '4/2025 đến 6/2025', 'Soạn thảo và chỉnh sửa báo cáo kỹ thuật, làm quen môi trường doanh nghiệp công nghệ.', ['Tài liệu kỹ thuật']],
-  ['2022', 'Học tập', 'Khoa học máy tính', 'Học viện Nông nghiệp Việt Nam', 'Bắt đầu học và dần chọn hướng phân tích thiết kế hệ thống.', ['Thuật toán', 'Toán rời rạc']]
+  ['2022', 'Học tập', 'Khoa học máy tính', 'Học viện Nông nghiệp Việt Nam', 'Bắt đầu học và dần chọn hướng phân tích thiết kế hệ thống.', ['Khoa học máy tính', 'Phân tích thiết kế hệ thống']]
 ];
 
 const Proj = (p) => h('article', { className: 'pj', key: p.n },
@@ -43,7 +43,7 @@ function App() {
       h('button', { className: 'tg', onClick: flip }, 'Sáng / Tối'))),
     h('header', { className: 'hero', id: 'top' },
       h('div', { className: 'hm' },
-        h('div', { className: 'pills' }, h('div', { className: 'dot' }, '*'), h('div', { className: 'pill' }, 'Sinh viên khoa học máy tính'), h('div', { className: 'pill' }, 'Business Analyst'), h('div', { className: 'pill' }, 'Phân tích thiết kế'), h('div', { className: 'pill' }, 'UI/UX'), h('div', { className: 'dot k' }, '</>')),
+        h('div', { className: 'pills' }, h('div', { className: 'dot' }, '*'), h('div', { className: 'pill' }, 'Khoa học máy tính'), h('div', { className: 'pill' }, 'Business Analyst'), h('div', { className: 'pill' }, 'Phân tích thiết kế'), h('div', { className: 'pill' }, 'UI/UX'), h('div', { className: 'dot k' }, '</>')),
         h('h1', { 'aria-label': 'Phạm Ngọc Dương' }, h('span', null, 'Phạm Ngọc '), h('span', null, 'Dương')),
         h('div', { className: 'code' }, 'const hoSo = async () => { ten: "Phạm Ngọc Dương", noiO: "Hà Nội", huongDi: "Business Analyst, UI/UX", thucTap: "Công ty TNHH MTV 76" }')),
       h('div', { className: 'bar' }, h('div', null, h('i', { className: 'on' }), 'Đang thực tập tại Z176'), h('div', null, 'Ở Hà Nội, Việt Nam'), h('div', null, h('b', null, 'Hôm nay: '), day), h('div', null, 'Cuộn xuống để xem tiếp'))),
@@ -51,7 +51,7 @@ function App() {
       h('section', { id: 'gioi-thieu' }, h('h2', null, 'Giới thiệu'), h('div', { style: { height: '2rem' } }),
         h('div', { className: 'ab' },
           h('div', { className: 'card' }, h('h3', null, 'Chào bạn, mình là Phạm Ngọc Dương.'),
-            h('p', null, 'Mình là sinh viên năm cuối ngành Khoa học máy tính tại Học viện Nông nghiệp Việt Nam. Mình thích nhất phần nghe người dùng cần gì, rồi vẽ thành sơ đồ và màn hình dễ dùng với đúng người sẽ dùng nó.'),
+            h('p', null, 'Mình thuộc ngành Khoa học máy tính tại Học viện Nông nghiệp Việt Nam. Mình thích nhất phần nghe người dùng cần gì, rồi vẽ thành sơ đồ và màn hình dễ dùng với đúng người sẽ dùng nó.'),
             h('p', null, 'Thế mạnh của mình là khâu phân tích và thiết kế: từ nghe yêu cầu, viết đặc tả, vẽ sơ đồ đến dựng giao diện. Mình phối hợp với các công cụ AI để đưa ý tưởng thành sản phẩm chạy thật, như LucyClass và hệ thống thi của Z176.'),
             A('https://github.com/duong218', 'Xem GitHub', { className: 'btn' }),
             h('div', { className: 'sk' }, h('div', null, h('h4', null, 'Phân tích và thiết kế'), Chips(['Use case', 'Activity', 'Sequence', 'Class', 'Hướng đối tượng'])), h('div', null, h('h4', null, 'Giao diện và code cơ bản'), Chips(['UI/UX', 'HTML', 'CSS', 'JavaScript', 'React', 'Node.js'])), h('div', null, h('h4', null, 'Công cụ'), Chips(['StarUML', 'GitHub', 'Antigravity', 'Claude'])))),
@@ -586,7 +586,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(h(App));
 (function () {
   const D = {
     'Trang chủ': 'Home', 'Giới thiệu': 'About', 'Dự án': 'Projects', 'Hành trình': 'Journey', 'Liên hệ': 'Contact', 'Sáng / Tối': 'Light / Dark', 'Về đầu trang': 'Back to top',
-    'Sinh viên khoa học máy tính': 'Computer science student', 'Phân tích thiết kế': 'Analysis & Design',
+    'Khoa học máy tính': 'Computer science', 'Phân tích thiết kế': 'Analysis & Design',
     'Đang thực tập tại Z176': 'Interning at Z176', 'Ở Hà Nội, Việt Nam': 'Based in Hanoi, Vietnam', 'Hôm nay:': 'Today:', 'Cuộn xuống để xem tiếp': 'Scroll down for more',
     'Xem dự án': 'View projects', 'Thẻ giới thiệu': 'ID card', 'Ảnh chân dung': 'Portrait',
     'Chào bạn, mình là Phạm Ngọc Dương.': 'Hi, I’m Phạm Ngọc Dương.', 'Xem GitHub': 'View GitHub',
@@ -616,7 +616,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(h(App));
   const L = [
     ['const hoSo', 'const profile = async () => { name: "Phạm Ngọc Dương", city: "Hanoi", goal: "Business Analyst, UI/UX", internship: "76 One-Member Co., Ltd." }'],
     ['Mình nghe người dùng nói', 'I listen to what users need, then turn it into diagrams and screens that are easy to use.'],
-    ['Mình là sinh viên năm cuối', 'I am a final-year computer science student at Vietnam National University of Agriculture. What I like most is listening to what users need, then turning it into diagrams and screens that are easy for the people who will actually use them.'],
+    ['Mình thuộc chuyên ngành Khoa học máy tính', 'I major in Computer Science at the Vietnam Agricultural University. What I like most is listening to what users need, then turning it into diagrams and screens that are easy for the people who will actually use them.'],
     ['Biết nhận trách nhiệm', 'I take responsibility and coordinate. In two team projects of four, I was the link between the lecturer’s requirements and the developers.'],
     ['Nghe khách hàng nói về', 'I listen to customers describe their work, ask again until it is clear, then explain features in plain words. I did this while presenting and refining LucyClass with its customer.'],
     ['Chia dự án thành các mốc', 'I split a project into small milestones (requirements, design, build, test, go live) and keep the pace myself. LucyClass was completed independently in five months, from January to May 2026.'],
